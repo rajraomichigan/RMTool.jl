@@ -12,8 +12,3 @@ Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
 Nemo = "0.45 - 0.70"
 julia = "1.10"
 
-[extras]
-Test = "8dfed614-fdb2-49b7-9a44-1dc16ac7fa6d"
-
-[targets]
-test = ["Test"]
