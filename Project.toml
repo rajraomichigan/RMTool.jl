@@ -1,0 +1,19 @@
+name = "RMTool"
+uuid = "2d0e4950-3c23-4fea-8457-f214aabcb2ed"
+authors = ["N. Raj Rao (original MATLAB toolbox)", "Julia port"]
+version = "1.0.0"
+
+[deps]
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+Nemo = "2edaba10-b0f1-5616-af89-8c11ac63239a"
+Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"
+
+[compat]
+Nemo = "0.45 - 0.70"
+julia = "1.10"
+
+[extras]
+Test = "8dfed614-fdb2-49b7-9a44-1dc16ac7fa6d"
+
+[targets]
+test = ["Test"]
