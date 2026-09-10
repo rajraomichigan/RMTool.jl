@@ -14,3 +14,9 @@ makedocs(
     ],
     warnonly = true,
 )
+
+
+deploydocs(
+    repo = "github.com/rajraomichigan/RMTool.jl.git",
+    devbranch = "main",
+)
