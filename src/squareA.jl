@@ -17,7 +17,7 @@ MomB = Lmz2MomS(LmzB, 5)      # compare the moments of A and B = A^2
 """
 function squareA(LmzA)
     L = numden(LmzA)
-    w = RMV.t                     # auxiliary variable playing the role of sqrt(z)
+    w = RMV.x                     # auxiliary variable playing the role of sqrt(z) (NOT RMV.t: L1plusL2 uses t internally as its own resultant-elimination variable, and aliasing them corrupts the result)
     iw = _idx(w)
     Lmz1 = subs(L, z => w,  m => 2 * m * w)
     Lmz2 = subs(L, z => -w, m => -2 * m * w)
