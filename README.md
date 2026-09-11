@@ -21,7 +21,7 @@ julia> ]
 pkg> add RMTool
 ```
 
-(until registration completes, install directly from GitHub: `pkg> add https://github.com/rajraomichigan/RMTool`)
+(until registration completes, install directly from GitHub: `pkg> add https://github.com/rajraomichigan/RMTool.jl`)
 
 Requires Julia ≥ 1.10; Nemo.jl is installed as a dependency. Add `Plots` for figures:
 
@@ -35,7 +35,7 @@ pkg> add Plots
 using RMTool, Plots
 
 b = wishartpol(1//2)                         # Marcenko-Pastur, c = n/N = 1/2
-Lmz2MomS(b, 10)                               # [1, 1, 3//2, 5//2, 37//8, ...]
+Lmz2MomS(b, 10)                               # [1, 1, 3//2, 11//4, 45//8, ...]
 info = Lmz2pdf(b, -0.05:0.01:5)
 plot(info.range, info.density)
 
@@ -110,9 +110,8 @@ Names follow the MATLAB toolbox (and the Python port) so existing scripts transl
 * `pretty`/`latex` → use Nemo's default printing, or `Latexify.jl` for LaTeX.
 
 Full documentation (users guide + function reference) is at
-**https://rajraomichigan.github.io/RMTool/**.
+**https://rajraomichigan.github.io/RMTool.jl**.
 
 ## License
 
-GPL-2.0-or-later, as the original toolbox. If you use RMTool in a publication,
-please cite the paper above and acknowledge the software.
+MIT License — see [LICENSE](LICENSE). Please cite the paper above and acknowledge the software if you use RMTool in a publication.

@@ -6,6 +6,7 @@ using LinearAlgebra
 # equality of polynomials up to a nonzero constant factor
 equiv(a, b) = divides(a, b)[1] && divides(b, a)[1]
 
+include("readme_examples.jl")
 @testset "RMTool" begin
     @testset "polynomial representation" begin
         L1 = numden(m - rat(1//2)//(1 - z) - rat(1//2)//(2 - z))
