@@ -14,7 +14,7 @@ using Test
         return
     end
 
-    text = read(readme, String)
+    text = replace(read(readme, String), "\r\n" => "\n")
     # capture ```julia ... ``` blocks (but not ```julia-norun ... ```)
     blocks = String[]
     for mblock in eachmatch(r"```julia\n(.*?)```"s, text)
